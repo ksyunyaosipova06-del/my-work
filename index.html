@@ -1,0 +1,688 @@
+```html
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Антон Владимирович — Презентации и проекты на заказ</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Google Fonts Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- FontAwesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#312e81',
+                        }
+                    }
+                }
+            }
+        }
+</script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(229, 231, 235, 0.8);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 50%, #06b6d4 100%);
+        }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+<!-- Header / Navbar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<a href="#" class="flex items-center gap-3 group">
+<div class="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+                    АВ
+</div>
+<div>
+<span class="font-bold text-lg text-slate-900 block leading-tight">Антон Владимирович</span>
+<span class="text-xs text-slate-500 font-medium">Проекты & Презентации</span>
+</div>
+</a>
+
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center gap-8 font-medium text-slate-600 text-sm">
+<a href="#about" class="hover:text-brand-600 transition-colors">Обо мне</a>
+<a href="#services" class="hover:text-brand-600 transition-colors">Услуги</a>
+<a href="#portfolio" class="hover:text-brand-600 transition-colors">Примеры работ</a>
+<a href="#pricing" class="hover:text-brand-600 transition-colors">Стоимость</a>
+<a href="#contact" class="hover:text-brand-600 transition-colors">Контакты</a>
+</nav>
+
+<!-- Telegram CTA Header Button -->
+<a href="https://t.me/shoch7" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 bg-slate-900 hover:bg-brand-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-indigo-500/25">
+<i class="fa-brands fa-telegram text-lg text-sky-400"></i>
+<span>Написать в Telegram</span>
+</a>
+
+<!-- Mobile Menu Toggle Button -->
+<button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+
+<!-- Mobile Dropdown Menu -->
+<div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3">
+<a href="#about" class="block text-slate-700 hover:text-brand-600 font-medium py-2">Обо мне</a>
+<a href="#services" class="block text-slate-700 hover:text-brand-600 font-medium py-2">Услуги</a>
+<a href="#portfolio" class="block text-slate-700 hover:text-brand-600 font-medium py-2">Примеры работ</a>
+<a href="#pricing" class="block text-slate-700 hover:text-brand-600 font-medium py-2">Стоимость</a>
+<a href="#contact" class="block text-slate-700 hover:text-brand-600 font-medium py-2">Контакты</a>
+<a href="https://t.me/shoch7" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-brand-600 text-white font-semibold py-3 rounded-xl w-full">
+<i class="fa-brands fa-telegram text-lg"></i>
+<span>Написать в Telegram (@shoch7)</span>
+</a>
+</div>
+</header>
+
+<main class="pt-20">
+<!-- Hero Section -->
+<section id="about" class="relative overflow-hidden py-20 lg:py-28 bg-gradient-to-b from-indigo-50/50 via-white to-slate-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+<div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-100 text-brand-700 text-xs sm:text-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                            Быстро, качественно и в срок
+</div>
+
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-none sm:leading-tight">
+                            Качественные <span class="gradient-text">презентации и проекты</span> на заказ
+</h1>
+
+<p class="text-slate-600 text-lg sm:text-xl font-normal max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            Приветствую! Меня зовут <strong class="text-slate-900">Антон Владимирович</strong>. Я помогаю студентам, школьникам и бизнесу создавать стильные, понятные и структурированные презентации и исследовательские работы.
+</p>
+
+<!-- Highlights Banner -->
+<div class="pt-2 flex flex-wrap gap-4 justify-center lg:justify-start">
+<div class="flex items-center gap-3 bg-white p-3.5 rounded-2xl shadow-sm border border-slate-200">
+<div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-lg">
+<i class="fa-solid fa-tag"></i>
+</div>
+<div class="text-left">
+<span class="block text-xs text-slate-500 font-medium">Фиксированная цена</span>
+<span class="text-lg font-bold text-slate-900">от 200 рублей</span>
+</div>
+</div>
+
+<div class="flex items-center gap-3 bg-white p-3.5 rounded-2xl shadow-sm border border-slate-200">
+<div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-lg">
+<i class="fa-solid fa-clock"></i>
+</div>
+<div class="text-left">
+<span class="block text-xs text-slate-500 font-medium">Сроки выполнения</span>
+<span class="text-lg font-bold text-slate-900">от 2 часов</span>
+</div>
+</div>
+</div>
+
+<!-- CTA Buttons -->
+<div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+<a href="https://t.me/shoch7" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-brand-600 hover:bg-brand-700 text-white font-semibold text-lg px-8 py-4 rounded-2xl shadow-lg shadow-brand-500/25 transition-all duration-300 transform hover:-translate-y-0.5">
+<i class="fa-brands fa-telegram text-2xl"></i>
+<span>Написать в Telegram (@shoch7)</span>
+</a>
+<a href="#portfolio" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-700 font-semibold text-lg px-8 py-4 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300">
+<span>Посмотреть примеры</span>
+<i class="fa-solid fa-arrow-down text-sm"></i>
+</a>
+</div>
+</div>
+
+<!-- Hero Visual Card -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="relative w-full max-w-md">
+<!-- Background Glowing Accent -->
+<div class="absolute -top-4 -left-4 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob"></div>
+<div class="absolute -bottom-4 -right-4 w-72 h-72 bg-cyan-300 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-2000"></div>
+
+<!-- Main Hero Card -->
+<div class="relative bg-white/90 backdrop-blur-xl p-6 sm:p-8 rounded-3xl shadow-2xl border border-white/60 space-y-6">
+<div class="flex items-center justify-between border-b border-slate-100 pb-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full gradient-bg text-white font-bold flex items-center justify-center text-xl shadow-md">
+                                            АВ
+</div>
+<div>
+<h3 class="font-bold text-slate-900">Антон Владимирович</h3>
+<p class="text-xs text-emerald-600 font-medium flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                                                Онлайн | Готов к заказам
+</p>
+</div>
+</div>
+</div>
+
+<div class="space-y-3">
+<div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+<i class="fa-solid fa-circle-check text-brand-600 text-lg mt-0.5"></i>
+<div>
+<h4 class="text-sm font-semibold text-slate-800">Индивидуальный дизайн</h4>
+<p class="text-xs text-slate-500">Без скучных шаблонов, уникальная визуализация</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+<i class="fa-solid fa-circle-check text-brand-600 text-lg mt-0.5"></i>
+<div>
+<h4 class="text-sm font-semibold text-slate-800">Правки бесплатно</h4>
+<p class="text-xs text-slate-500">Корректирую материал до идеального результата</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+<i class="fa-solid fa-circle-check text-brand-600 text-lg mt-0.5"></i>
+<div>
+<h4 class="text-sm font-semibold text-slate-800">Доступная цена</h4>
+<p class="text-xs text-slate-500">Стоимость услуг всего от 200 рублей</p>
+</div>
+</div>
+</div>
+
+<div class="bg-indigo-50/70 p-4 rounded-2xl border border-indigo-100 flex justify-between items-center">
+<span class="text-sm font-medium text-indigo-900">Есть готовое задание?</span>
+<a href="https://t.me/shoch7" target="_blank" class="text-xs font-bold bg-brand-600 text-white px-3.5 py-2 rounded-xl hover:bg-brand-700 transition">
+                                        Отправить в ТГ
+</a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+<h2 class="text-xs uppercase font-bold tracking-widest text-brand-600">Что я предлагаю</h2>
+<p class="text-3xl sm:text-4xl font-extrabold text-slate-900">Мои ключевые услуги</p>
+<p class="text-slate-600 text-base sm:text-lg">Разрабатываю презентации любой сложности для учебы, бизнеса и выступлений, а также выполняю учебные работы.</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Service Card 1 -->
+<div class="bg-slate-50 p-8 rounded-3xl border border-slate-200/80 hover:border-brand-500 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 group">
+<div class="w-14 h-14 rounded-2xl bg-indigo-100 text-brand-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 group-hover:bg-brand-600 group-hover:text-white transition-all duration-300">
+<i class="fa-solid fa-file-powerpoint"></i>
+</div>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Презентации на заказ</h3>
+<p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            PowerPoint, Keynote, PDF. Для защиты диплома, курсовой, бизнес-докладов, питчей и школьных уроков.
+</p>
+<ul class="text-xs text-slate-500 space-y-2">
+<li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Проработка структуры</li>
+<li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Подбор инфографики</li>
+</ul>
+</div>
+
+<!-- Service Card 2 -->
+<div class="bg-slate-50 p-8 rounded-3xl border border-slate-200/80 hover:border-brand-500 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 group">
+<div class="w-14 h-14 rounded-2xl bg-cyan-100 text-cyan-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300">
+<i class="fa-solid fa-graduation-cap"></i>
+</div>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Учебные проекты</h3>
+<p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Помощь в подготовке рефератов, исследовательских, школьных и студенческих проектов.
+</p>
+<ul class="text-xs text-slate-500 space-y-2">
+<li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> Поиск информации</li>
+<li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-600"></i> Грамотное оформление</li>
+</ul>
+</div>
+
+<!-- Service Card 3 -->
+<div class="bg-slate-50 p-8 rounded-3xl border border-slate-200/80 hover:border-brand-500 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 group">
+<div class="w-14 h-14 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+</div>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Редизайн слайдов</h3>
+<p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Превращу вашу готовую, но устаревшую или некрасивую презентацию в современный visual-проект.
+</p>
+<ul class="text-xs text-slate-500 space-y-2">
+<li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-600"></i> Исправление шрифтов</li>
+<li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-600"></i> Выравнивание и цвета</li>
+</ul>
+</div>
+
+<!-- Service Card 4 -->
+<div class="bg-slate-50 p-8 rounded-3xl border border-slate-200/80 hover:border-brand-500 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 group">
+<div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+<i class="fa-solid fa-bolt"></i>
+</div>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Срочное выполнение</h3>
+<p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Нужно сделать слайды «уже на завтра»? Быстро включусь в работу и подготовлю материал в сжатый срок.
+</p>
+<ul class="text-xs text-slate-500 space-y-2">
+<li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Сроки от 2-4 часов</li>
+<li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Всегда на связи</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20 bg-slate-100/70">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div class="space-y-3">
+<h2 class="text-xs uppercase font-bold tracking-widest text-brand-600">Портфолио</h2>
+<p class="text-3xl sm:text-4xl font-extrabold text-slate-900">Примеры выполненных работ</p>
+<p class="text-slate-600">Нажмите на карточку, чтобы рассмотреть примеры слайдов</p>
+</div>
+
+<!-- Category Filter Buttons -->
+<div class="flex flex-wrap gap-2" id="portfolio-filters">
+<button data-filter="all" class="filter-btn active bg-brand-600 text-white px-4 py-2 rounded-xl text-sm font-semibold transition">Все</button>
+<button data-filter="business" class="filter-btn bg-white hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-xl text-sm font-semibold transition">Бизнес & Питчи</button>
+<button data-filter="study" class="filter-btn bg-white hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-xl text-sm font-semibold transition">Учебные</button>
+<button data-filter="creative" class="filter-btn bg-white hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-xl text-sm font-semibold transition">Креативные</button>
+</div>
+</div>
+
+<!-- Portfolio Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- Item 1: Business Pitch -->
+<div class="portfolio-item business bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer" onclick="openModal('Презентация для стартапа', 'Бизнес-презентация', 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1000&q=80', 'Разработана строгая структура, подобрана лаконичная цветовая гамма и наглядная инфографика для инвесторов.')">
+<div class="relative overflow-hidden aspect-video bg-slate-200">
+<img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80" alt="Презентация для стартапа" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+<div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white/90 text-slate-900 font-bold text-sm px-4 py-2 rounded-full shadow">Просмотреть слайды</span>
+</div>
+</div>
+<div class="p-6">
+<span class="text-xs font-semibold uppercase text-brand-600 tracking-wider">Бизнес & Питч</span>
+<h3 class="text-lg font-bold text-slate-900 mt-1">Презентация бизнес-проекта / IT-Стартапа</h3>
+<p class="text-slate-500 text-sm mt-2 line-clamp-2">Современный дизайн слайдов с акцентом на финансовую модель и аналитику.</p>
+</div>
+</div>
+
+<!-- Item 2: Educational Work -->
+<div class="portfolio-item study bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer" onclick="openModal('Исследовательский проект по экологии', 'Учебный проект', 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80', 'Подготовлена полная исследовательская работа и сопроводительная презентация с графиками и ключевыми тезисами.')">
+<div class="relative overflow-hidden aspect-video bg-slate-200">
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Учебный проект" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+<div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white/90 text-slate-900 font-bold text-sm px-4 py-2 rounded-full shadow">Просмотреть слайды</span>
+</div>
+</div>
+<div class="p-6">
+<span class="text-xs font-semibold uppercase text-emerald-600 tracking-wider">Учебные работы</span>
+<h3 class="text-lg font-bold text-slate-900 mt-1">Доклад и презентация по Экологии</h3>
+<p class="text-slate-500 text-sm mt-2 line-clamp-2">Чистое оформление, четкая структура для защиты диплома или курсовой работы.</p>
+</div>
+</div>
+
+<!-- Item 3: Creative -->
+<div class="portfolio-item creative bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer" onclick="openModal('Маркетинговая стратегия бренда', 'Креативная презентация', 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80', 'Яркий стильный дизайн для агентства с упором на визуал и инфографику показателей.')">
+<div class="relative overflow-hidden aspect-video bg-slate-200">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Маркетинговая презентация" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+<div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white/90 text-slate-900 font-bold text-sm px-4 py-2 rounded-full shadow">Просмотреть слайды</span>
+</div>
+</div>
+<div class="p-6">
+<span class="text-xs font-semibold uppercase text-purple-600 tracking-wider">Креативные</span>
+<h3 class="text-lg font-bold text-slate-900 mt-1">Маркетинговый отчет и Стратегия</h3>
+<p class="text-slate-500 text-sm mt-2 line-clamp-2">Интерьерный и стильный дизайн презентации для рекламных проектов.</p>
+</div>
+</div>
+
+<!-- Item 4: Scientific / Academic -->
+<div class="portfolio-item study bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer" onclick="openModal('Презентация для школьного проекта', 'Учебный проект', 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1000&q=80', 'Доступная подача сложного материала с иллюстрациями и понятными выводами.')">
+<div class="relative overflow-hidden aspect-video bg-slate-200">
+<img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80" alt="Школьный проект" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+<div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white/90 text-slate-900 font-bold text-sm px-4 py-2 rounded-full shadow">Просмотреть слайды</span>
+</div>
+</div>
+<div class="p-6">
+<span class="text-xs font-semibold uppercase text-emerald-600 tracking-wider">Учебные работы</span>
+<h3 class="text-lg font-bold text-slate-900 mt-1">Проект по Истории и Обществознанию</h3>
+<p class="text-slate-500 text-sm mt-2 line-clamp-2">Интересное визуальное сопровождение для выступлений перед классом или комиссией.</p>
+</div>
+</div>
+
+<!-- Item 5: Business -->
+<div class="portfolio-item business bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer" onclick="openModal('Коммерческое предложение (КП)', 'Бизнес-презентация', 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=80', 'Презентация услуг компании в формате продающего Commercial Proposal.')">
+<div class="relative overflow-hidden aspect-video bg-slate-200">
+<img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" alt="Коммерческое предложение" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+<div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white/90 text-slate-900 font-bold text-sm px-4 py-2 rounded-full shadow">Просмотреть слайды</span>
+</div>
+</div>
+<div class="p-6">
+<span class="text-xs font-semibold uppercase text-brand-600 tracking-wider">Бизнес & Питч</span>
+<h3 class="text-lg font-bold text-slate-900 mt-1">Коммерческое предложение (PDF)</h3>
+<p class="text-slate-500 text-sm mt-2 line-clamp-2">Лаконичный формат презентации для рассылки потенциальным клиентам.</p>
+</div>
+</div>
+
+<!-- Item 6: Creative -->
+<div class="portfolio-item creative bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer" onclick="openModal('Портфолио работ и услуг', 'Креативная презентация', 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1000&q=80', 'Оформление персонального кейса фрилансера или специалиста.')">
+<div class="relative overflow-hidden aspect-video bg-slate-200">
+<img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Портфолио услуг" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+<div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white/90 text-slate-900 font-bold text-sm px-4 py-2 rounded-full shadow">Просмотреть слайды</span>
+</div>
+</div>
+<div class="p-6">
+<span class="text-xs font-semibold uppercase text-purple-600 tracking-wider">Креативные</span>
+<h3 class="text-lg font-bold text-slate-900 mt-1">Портфолио специалиста / Резюме</h3>
+<p class="text-slate-500 text-sm mt-2 line-clamp-2">Креативная интерактивная презентация для демонстрации услуг.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Pricing & Advantages Section -->
+<section id="pricing" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 sm:p-12 lg:p-16 text-white relative overflow-hidden shadow-2xl">
+<!-- Decor background elements -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-brand-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+
+<div class="lg:col-span-7 space-y-6">
+<span class="px-3.5 py-1.5 rounded-full bg-brand-500/20 border border-brand-400/30 text-brand-300 text-xs font-bold uppercase tracking-wider">
+                                Прозрачные условия
+</span>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+                                Сколько стоит сделать презентацию или проект?
+</h2>
+<p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                                У меня честная и фиксированная базовая стоимость без скрытых переплат. Вы получаете готовый проект точно в срок.
+</p>
+
+<!-- Advantages Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">✓</div>
+<span class="text-sm text-slate-200">Сроки выполнения от 2-3 часов</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">✓</div>
+<span class="text-sm text-slate-200">Бесплатные правки и доработки</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">✓</div>
+<span class="text-sm text-slate-200">Уникальный современный дизайн</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">✓</div>
+<span class="text-sm text-slate-200">Форматы PPTX, PDF, Keynote</span>
+</div>
+</div>
+</div>
+
+<!-- Price Tag Card -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="w-full max-w-sm bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/15 text-center space-y-6">
+<span class="text-slate-300 text-sm font-semibold uppercase tracking-wider block">Стоимость работы</span>
+<div class="space-y-1">
+<div class="text-5xl sm:text-6xl font-black text-white">
+                                        200 <span class="text-2xl font-bold text-brand-300">руб.</span>
+</div>
+<p class="text-xs text-slate-400">Фиксированная ставка за проект / базовую презентацию</p>
+</div>
+
+<hr class="border-white/10">
+
+<a href="https://t.me/shoch7" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-500 to-sky-400 hover:opacity-95 text-white font-bold py-4 rounded-2xl shadow-lg transition-all transform hover:scale-[1.02]">
+<i class="fa-brands fa-telegram text-xl"></i>
+<span>Заказать за 200 руб.</span>
+</a>
+
+<p class="text-xs text-slate-400">Напишите в Telegram — отвечу в течение 5-10 минут!</p>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Order / Contact Form Section -->
+<section id="contact" class="py-20 bg-slate-50 relative">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="bg-white p-8 sm:p-12 rounded-3xl shadow-xl border border-slate-200 space-y-8">
+<div class="text-center space-y-3">
+<h2 class="text-xs uppercase font-bold tracking-widest text-brand-600">Связаться со мной</h2>
+<h3 class="text-3xl font-extrabold text-slate-900">Оставить заявку на проект</h3>
+<p class="text-slate-600 text-sm sm:text-base">
+                            Заполните быструю форму или напрямую напишите мне в Telegram: 
+<a href="https://t.me/shoch7" target="_blank" class="text-brand-600 font-bold hover:underline">@shoch7</a>
+</p>
+</div>
+
+<!-- Direct Telegram Box -->
+<div class="bg-sky-50 border border-sky-200 rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-sky-500 text-white flex items-center justify-center text-2xl font-bold">
+<i class="fa-brands fa-telegram"></i>
+</div>
+<div>
+<h4 class="font-bold text-slate-900">Прямая связь в Telegram</h4>
+<p class="text-xs text-slate-500">Антон Владимирович • Telegram: @shoch7</p>
+</div>
+</div>
+<a href="https://t.me/shoch7" target="_blank" rel="noopener noreferrer" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition shadow-sm whitespace-nowrap">
+                            Открыть чат @shoch7
+</a>
+</div>
+
+<!-- Interactive Form -->
+<form id="orderForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-xs font-bold uppercase text-slate-600 mb-2">Ваше имя</label>
+<input type="text" id="userName" required placeholder="Например, Иван" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100 transition text-sm">
+</div>
+<div>
+<label class="block text-xs font-bold uppercase text-slate-600 mb-2">Ваш Telegram / WhatsApp / Телефон</label>
+<input type="text" id="userContact" required placeholder="@username или +7 (999)..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100 transition text-sm">
+</div>
+</div>
+
+<div>
+<label class="block text-xs font-bold uppercase text-slate-600 mb-2">Тип работы</label>
+<select id="workType" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100 transition text-sm bg-white">
+<option value="Презентация">Презентация (PowerPoint / PDF)</option>
+<option value="Учебный проект">Учебный / Школьный / Студенческий проект</option>
+<option value="Редизайн слайдов">Редизайн готовых слайдов</option>
+<option value="Другое">Другая задача</option>
+</select>
+</div>
+
+<div>
+<label class="block text-xs font-bold uppercase text-slate-600 mb-2">Тема работы и пожелания</label>
+<textarea id="workDetails" rows="4" required placeholder="Опишите кратко тему, количество слайдов и желаемый срок..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-600 focus:ring-2 focus:ring-brand-100 transition text-sm"></textarea>
+</div>
+
+<button type="submit" class="w-full bg-slate-900 hover:bg-brand-600 text-white font-bold py-4 rounded-xl shadow-md transition-all duration-300 flex items-center justify-center gap-2">
+<i class="fa-paper-plane fa-regular"></i>
+<span>Отправить заявку</span>
+</button>
+</form>
+
+<!-- Alert message container after submit -->
+<div id="formSuccess" class="hidden bg-emerald-50 border border-emerald-200 text-emerald-800 p-4 rounded-2xl text-center space-y-2">
+<i class="fa-solid fa-circle-check text-2xl text-emerald-600"></i>
+<h4 class="font-bold text-lg">Заявка сформирована!</h4>
+<p class="text-sm">Сейчас произойдет переход в Telegram для отправки сообщения.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center text-white font-bold text-sm">
+                    АВ
+</div>
+<div>
+<span class="text-white font-bold text-base block leading-tight">Антон Владимирович</span>
+<span class="text-xs text-slate-500">Презентации и проекты на заказ</span>
+</div>
+</div>
+
+<div class="text-center md:text-left text-xs text-slate-500">
+                © 2026 Антон Владимирович. Все права защищены.<br>Оплата услуг — от 200 рублей.
+</div>
+
+<div class="flex items-center gap-4">
+<a href="https://t.me/shoch7" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-brand-600 text-white flex items-center justify-center transition">
+<i class="fa-brands fa-telegram text-lg"></i>
+</a>
+</div>
+</div>
+</footer>
+
+<!-- Portfolio Modal Window -->
+<div id="portfolioModal" class="fixed inset-0 z-50 hidden bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-4">
+<div class="bg-white rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl relative transform transition-all">
+<button onclick="closeModal()" class="absolute top-4 right-4 z-10 w-9 h-9 bg-slate-900/60 hover:bg-slate-900 text-white rounded-full flex items-center justify-center transition">
+<i class="fa-solid fa-xmark"></i>
+</button>
+
+<div class="aspect-video bg-slate-100 overflow-hidden relative">
+<img id="modalImage" src="" alt="Пример презентации" class="w-full h-full object-cover">
+</div>
+
+<div class="p-6 sm:p-8 space-y-4">
+<div>
+<span id="modalCategory" class="text-xs font-bold uppercase text-brand-600 tracking-wider">Категория</span>
+<h3 id="modalTitle" class="text-2xl font-extrabold text-slate-900 mt-1">Заголовок</h3>
+</div>
+
+<p id="modalDesc" class="text-slate-600 text-sm leading-relaxed">Описание проекта...</p>
+
+<div class="pt-4 flex flex-col sm:flex-row justify-between items-center gap-4 border-t border-slate-100">
+<span class="text-xs font-semibold text-slate-500">Стоимость аналогичной работы: от 200 руб.</span>
+<a href="https://t.me/shoch7" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-bold px-6 py-2.5 rounded-xl text-sm transition">
+<i class="fa-brands fa-telegram"></i>
+<span>Хочу такую же</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Scripts -->
+<script>
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter Portfolio Items
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active style from all
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-brand-600', 'text-white');
+                    b.classList.add('bg-white', 'text-slate-700');
+                });
+                // Add active style to clicked
+                btn.classList.remove('bg-white', 'text-slate-700');
+                btn.classList.add('bg-brand-600', 'text-white');
+
+                const filter = btn.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Modal Functionality
+        function openModal(title, category, imgSrc, desc) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalCategory').innerText = category;
+            document.getElementById('modalImage').src = imgSrc;
+            document.getElementById('modalDesc').innerText = desc;
+            document.getElementById('portfolioModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('portfolioModal').classList.add('hidden');
+        }
+
+        // Close Modal when clicking outside
+        document.getElementById('portfolioModal').addEventListener('click', (e) => {
+            if (e.target.id === 'portfolioModal') {
+                closeModal();
+            }
+        });
+
+        // Form Submit Redirect to Telegram
+        function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('userName').value;
+            const contact = document.getElementById('userContact').value;
+            const type = document.getElementById('workType').value;
+            const details = document.getElementById('workDetails').value;
+
+            const text = `Здравствуйте, Антон Владимирович!%0A%0AМеня зовут: ${encodeURIComponent(name)}%0AМой контакт: ${encodeURIComponent(contact)}%0AТип работы: ${encodeURIComponent(type)}%0AДетали: ${encodeURIComponent(details)}`;
+
+            document.getElementById('formSuccess').classList.remove('hidden');
+
+            setTimeout(() => {
+                window.open(`https://t.me/shoch7?text=${text}`, '_blank');
+            }, 1000);
+        }
+</script>
+</body>
+</html>
+```
